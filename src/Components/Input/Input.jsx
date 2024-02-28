@@ -1,9 +1,15 @@
 import PropTypes from "prop-types";
 import "./input.css";
 
-const Input = ({ handleChange }) => {
+const Input = ({ setColor }) => {
+  const handleChange = (e) => {
+    const newColor = e.target.value;
+    setColor(newColor);
+  };
+
   return (
     <input
+      autoFocus
       className="input"
       placeholder="Add color name"
       onChange={handleChange}
