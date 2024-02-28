@@ -10,7 +10,7 @@ const Input = ({ setColor }) => {
   return (
     <input
       autoFocus
-      className="input"
+      className="colorText"
       placeholder="Add color name"
       onChange={handleChange}
     ></input>
@@ -18,7 +18,7 @@ const Input = ({ setColor }) => {
 };
 
 Input.propTypes = {
-  handleChange: PropTypes.func,
+  setColor: PropTypes.func,
 };
 
 export default Input;
