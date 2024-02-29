@@ -1,6 +1,8 @@
 body {
   font-family: Arial, sans-serif;
   font-weight: 400;
+  overflow: hidden;
+  background-color: beige;
 }
 
 .container {
